@@ -227,10 +227,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -10.16 7.62 0)
+			(pin power_in line
+				(at -5.08 -15.24 90)
 				(length 2.54)
-				(name "EN1"
+				(name "GND1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -255,7 +255,7 @@
 						)
 					)
 				)
-				(number "4"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -266,14 +266,14 @@
 			(pin input line
 				(at -10.16 1.27 0)
 				(length 2.54)
-				(name "IBD"
+				(name "INB"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "5"
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -291,7 +291,7 @@
 						)
 					)
 				)
-				(number "6"
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -309,6 +309,24 @@
 						)
 					)
 				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 7.62 0)
+				(length 2.54)
+				(name "EN1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
 				(number "7"
 					(effects
 						(font
@@ -320,6 +338,7 @@
 			(pin power_in line
 				(at -5.08 -15.24 90)
 				(length 2.54)
+				(hide yes)
 				(name "GND1"
 					(effects
 						(font
@@ -354,6 +373,24 @@
 				)
 			)
 			(pin input line
+				(at 10.16 7.62 180)
+				(length 2.54)
+				(name "EN2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
 				(at 10.16 -3.81 180)
 				(length 2.54)
 				(name "IND"
@@ -363,7 +400,7 @@
 						)
 					)
 				)
-				(number "10"
+				(number "11"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -381,7 +418,7 @@
 						)
 					)
 				)
-				(number "11"
+				(number "12"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -399,7 +436,7 @@
 						)
 					)
 				)
-				(number "12"
+				(number "13"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -417,7 +454,7 @@
 						)
 					)
 				)
-				(number "13"
+				(number "14"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -425,10 +462,11 @@
 					)
 				)
 			)
-			(pin output line
-				(at 10.16 7.62 180)
+			(pin power_in line
+				(at 5.08 -15.24 90)
 				(length 2.54)
-				(name "EN2"
+				(hide yes)
+				(name "GND2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -684,7 +722,7 @@
 				)
 			)
 			(pin open_collector line
-				(at -12.7 -8.89 0)
+				(at -12.7 -7.62 0)
 				(length 2.54)
 				(name "~{FAULT}"
 					(effects
@@ -702,7 +740,7 @@
 				)
 			)
 			(pin open_collector line
-				(at -12.7 -6.35 0)
+				(at -12.7 -5.08 0)
 				(length 2.54)
 				(name "SNSOUT"
 					(effects
@@ -738,7 +776,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -13.97 0)
+				(at -12.7 -10.16 0)
 				(length 2.54)
 				(name "IDRIVE"
 					(effects
