@@ -471,23 +471,25 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at 4.064 9.652 0)
+			(at 6.35 -22.86 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" ""
-			(at 0 0 0)
+		(property "Value" "DRV8701E"
+			(at 6.35 -25.4 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -501,7 +503,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv8701.pdf"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -512,7 +514,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Brushed DC H-bridge gate driver, PH/EN, VQFN-24 (RGE)"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -520,12 +522,25 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "DRV8701E_0_1"
+			(rectangle
+				(start -10.16 16.51)
+				(end 10.16 -16.51)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
 				)
 			)
 		)
 		(symbol "DRV8701E_1_1"
 			(pin power_in line
-				(at 6.35 0 270)
+				(at 1.27 19.05 270)
 				(length 2.54)
 				(name "VM"
 					(effects
@@ -543,7 +558,7 @@
 				)
 			)
 			(pin power_out line
-				(at 3.81 0 270)
+				(at 8.89 19.05 270)
 				(length 2.54)
 				(name "VCP"
 					(effects
@@ -560,8 +575,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 1.27 0 270)
+			(pin passive line
+				(at -12.7 1.27 0)
 				(length 2.54)
 				(name "CPH"
 					(effects
@@ -578,8 +593,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -1.27 0 270)
+			(pin passive line
+				(at -12.7 -1.27 0)
 				(length 2.54)
 				(name "CPL"
 					(effects
@@ -597,7 +612,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -40.64 90)
+				(at -1.27 -19.05 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -615,7 +630,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -17.78 0)
+				(at 12.7 -13.97 180)
 				(length 2.54)
 				(name "VREF"
 					(effects
@@ -632,8 +647,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -6.35 0 270)
+			(pin power_out line
+				(at -6.35 19.05 270)
 				(length 2.54)
 				(name "AVDD"
 					(effects
@@ -650,8 +665,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -3.81 0 270)
+			(pin power_out line
+				(at -8.89 19.05 270)
 				(length 2.54)
 				(name "DVDD"
 					(effects
@@ -669,7 +684,7 @@
 				)
 			)
 			(pin open_collector line
-				(at 13.97 -12.7 180)
+				(at -12.7 -8.89 0)
 				(length 2.54)
 				(name "~{FAULT}"
 					(effects
@@ -687,7 +702,7 @@
 				)
 			)
 			(pin open_collector line
-				(at 13.97 -15.24 180)
+				(at -12.7 -6.35 0)
 				(length 2.54)
 				(name "SNSOUT"
 					(effects
@@ -705,7 +720,7 @@
 				)
 			)
 			(pin output line
-				(at 13.97 -17.78 180)
+				(at 12.7 -11.43 180)
 				(length 2.54)
 				(name "SO"
 					(effects
@@ -723,7 +738,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -15.24 0)
+				(at -12.7 -13.97 0)
 				(length 2.54)
 				(name "IDRIVE"
 					(effects
@@ -741,7 +756,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -12.7 0)
+				(at -12.7 3.81 0)
 				(length 2.54)
 				(name "~{SLEEP}"
 					(effects
@@ -759,7 +774,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -30.48 0)
+				(at -12.7 8.89 0)
 				(length 2.54)
 				(name "EN"
 					(effects
@@ -777,7 +792,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -33.02 0)
+				(at -12.7 6.35 0)
 				(length 2.54)
 				(name "PH"
 					(effects
@@ -795,7 +810,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -40.64 90)
+				(at -1.27 -19.05 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -814,7 +829,7 @@
 				)
 			)
 			(pin output line
-				(at 13.97 -20.32 180)
+				(at 12.7 8.89 180)
 				(length 2.54)
 				(name "GH1"
 					(effects
@@ -832,7 +847,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -25.4 0)
+				(at 12.7 -1.27 180)
 				(length 2.54)
 				(name "SH1"
 					(effects
@@ -850,7 +865,7 @@
 				)
 			)
 			(pin output line
-				(at 13.97 -25.4 180)
+				(at 12.7 3.81 180)
 				(length 2.54)
 				(name "GL1"
 					(effects
@@ -868,7 +883,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -20.32 0)
+				(at 1.27 -19.05 90)
 				(length 2.54)
 				(name "SN"
 					(effects
@@ -886,7 +901,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -22.86 0)
+				(at 12.7 -8.89 180)
 				(length 2.54)
 				(name "SP"
 					(effects
@@ -904,7 +919,7 @@
 				)
 			)
 			(pin output line
-				(at 13.97 -27.94 180)
+				(at 12.7 1.27 180)
 				(length 2.54)
 				(name "GL2"
 					(effects
@@ -922,7 +937,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -27.94 0)
+				(at 12.7 -3.81 180)
 				(length 2.54)
 				(name "SH2"
 					(effects
@@ -940,7 +955,7 @@
 				)
 			)
 			(pin output line
-				(at 13.97 -22.86 180)
+				(at 12.7 6.35 180)
 				(length 2.54)
 				(name "GH2"
 					(effects
@@ -958,7 +973,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -40.64 90)
+				(at -1.27 -19.05 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
